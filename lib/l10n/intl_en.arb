@@ -1,3 +1,8 @@
 {
-    
+    "@@locale": "en",
+    "news24": "News 24",
+    "userName": "Username",
+    "password": "Password",
+    "email": "Email",
+    "SignUp": "Sign Up"
 }
