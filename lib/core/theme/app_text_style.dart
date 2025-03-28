@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -17,5 +18,14 @@ class AppTextStyle {
   static TextStyle sfproMedS14 = TextStyle(
     fontFamily: FontsStrings.sfproMeduim,
     fontSize: 14.sp,
+  );
+  static TextStyle sfproMedS13 = TextStyle(
+    fontFamily: FontsStrings.sfproMeduim,
+    fontSize: 13.sp,
+  );
+  static TextStyle sfproBoldS13 = TextStyle(
+    fontFamily: FontsStrings.sfproBold,
+    fontSize: 13.sp,
+    fontWeight: FontWeight.bold
   );
 }

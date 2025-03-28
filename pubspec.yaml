@@ -83,6 +83,9 @@ flutter:
     - family: SFPRO-Medium
       fonts:
         - asset: assets/fonts/SFPRODISPLAYMEDIUM.OTF
+    - family: SFPRO-Bold
+      fonts:
+        - asset: assets/fonts/SFPRODISPLAYBOLD.OTF
   #         weight: 700
   #
   # For details regarding fonts from package dependencies,

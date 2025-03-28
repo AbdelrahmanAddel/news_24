@@ -4,5 +4,8 @@
     "userName": "Username",
     "password": "Password",
     "email": "Email",
-    "SignUp": "Sign Up"
+    "SignUp": "Sign Up",
+    "orSignIn": "  or sign in with  ",
+    "bySigningUp": "By signing up to News24 you are accepting our \n",
+    "termsAndConditions": "Terms & Conditions"
 }

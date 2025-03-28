@@ -23,9 +23,16 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "SignUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
+    "bySigningUp": MessageLookupByLibrary.simpleMessage(
+      "By signing up to News24 you are accepting our \n",
+    ),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "news24": MessageLookupByLibrary.simpleMessage("News 24"),
+    "orSignIn": MessageLookupByLibrary.simpleMessage("  or sign in with  "),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "termsAndConditions": MessageLookupByLibrary.simpleMessage(
+      "Terms & Conditions",
+    ),
     "userName": MessageLookupByLibrary.simpleMessage("Username"),
   };
 }

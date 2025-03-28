@@ -79,6 +79,36 @@ class S {
   String get SignUp {
     return Intl.message('Sign Up', name: 'SignUp', desc: '', args: []);
   }
+
+  /// `  or sign in with  `
+  String get orSignIn {
+    return Intl.message(
+      '  or sign in with  ',
+      name: 'orSignIn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By signing up to News24 you are accepting our \n`
+  String get bySigningUp {
+    return Intl.message(
+      'By signing up to News24 you are accepting our \n',
+      name: 'bySigningUp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms & Conditions`
+  String get termsAndConditions {
+    return Intl.message(
+      'Terms & Conditions',
+      name: 'termsAndConditions',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
