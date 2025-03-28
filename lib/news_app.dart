@@ -17,7 +17,6 @@ class NewsApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
-        locale: const Locale('en'),
         localizationsDelegates: [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
@@ -30,7 +29,6 @@ class NewsApp extends StatelessWidget {
         theme: AppTheme.lightTheme,
         themeMode: ThemeMode.light,
         initialRoute: Routes.splash,
-      
 
         onGenerateRoute: appRouter.onGenerateRoute,
       ),

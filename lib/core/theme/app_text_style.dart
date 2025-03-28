@@ -3,8 +3,8 @@ import 'package:news_24/core/constants/fonts_strings.dart';
 
 class AppTextStyle {
   AppTextStyle._();
-  static TextStyle cabinBoldS18 = TextStyle(
+  static TextStyle cabinBoldS23 = TextStyle(
     fontFamily: FontsStrings.cabinBold,
-    fontSize: 18,
+    fontSize: 23,
   );
 }
