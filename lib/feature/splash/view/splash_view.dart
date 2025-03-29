@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_24/core/constants/assets.dart';
-
 import 'package:flutter/scheduler.dart';
+import 'package:news_24/core/constants/assets.dart';
 import 'package:news_24/feature/splash/function/delay_function.dart';
 import 'package:news_24/feature/splash/view/splash_view_body.dart';
 import 'package:news_24/generated/l10n.dart';
@@ -17,7 +16,6 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
-
     SchedulerBinding.instance.addPostFrameCallback((_) {
       delayNavigation(context);
     });
@@ -33,3 +31,4 @@ class _SplashViewState extends State<SplashView> {
     );
   }
 }
+

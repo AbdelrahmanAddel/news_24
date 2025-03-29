@@ -60,6 +60,7 @@ class S {
     return Intl.message('News 24', name: 'news24', desc: '', args: []);
   }
 
+
   /// `Username`
   String get userName {
     return Intl.message('Username', name: 'userName', desc: '', args: []);
@@ -158,6 +159,7 @@ class S {
       desc: '',
       args: [],
     );
+
   }
 }
 

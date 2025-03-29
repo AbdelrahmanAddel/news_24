@@ -23,15 +23,15 @@ class SignUpView extends StatelessWidget {
             child: SafeArea(
               child: Column(
                 children: [
-                  LogoWidget(),
+                  const LogoWidget(),
                   verticalSpace(20),
-                  SignUpTextFormFields(),
+                  const SignUpTextFormFields(),
                   verticalSpace(49),
-                  SignUpButton(),
+                  const SignUpButton(),
                   verticalSpace(50),
-                  OrSignInWith(),
+                  const OrSignInWith(),
                   verticalSpace(40),
-                  SocialMediaIcons(),
+                  const SocialMediaIcons(),
                   verticalSpace(30),
                   CustomTextSpan(
                     firstText: S.of(context).bySigningUp,

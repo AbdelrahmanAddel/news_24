@@ -30,7 +30,9 @@ class NewsApp extends StatelessWidget {
         theme: AppTheme.lightTheme,
         themeMode: ThemeMode.light,
 
+
         initialRoute: Routes.signUp,
+
 
         onGenerateRoute: appRouter.onGenerateRoute,
       ),
