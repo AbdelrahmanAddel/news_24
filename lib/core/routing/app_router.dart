@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_24/core/routing/routes.dart';
-import 'package:news_24/feature/sign_in/presentation/view/sign_in_view.dart';
+import 'package:news_24/feature/sign_in/presentation/view/presentation/view/sign_in_view.dart';
 import 'package:news_24/feature/sign_up/presentation/cubit/signup_cubit.dart';
 import 'package:news_24/feature/sign_up/presentation/view/sign_up_view.dart';
 import 'package:news_24/feature/splash/view/splash_view.dart';

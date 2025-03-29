@@ -60,7 +60,6 @@ class S {
     return Intl.message('News 24', name: 'news24', desc: '', args: []);
   }
 
-
   /// `Username`
   String get userName {
     return Intl.message('Username', name: 'userName', desc: '', args: []);
@@ -159,7 +158,36 @@ class S {
       desc: '',
       args: [],
     );
+  }
 
+  /// `Sign In`
+  String get signIn {
+    return Intl.message('Sign In', name: 'signIn', desc: '', args: []);
+  }
+
+  /// `Forget Password`
+  String get forgetPassword {
+    return Intl.message(
+      'Forget Password',
+      name: 'forgetPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don’t have an account? `
+  String get dontHaveAccount {
+    return Intl.message(
+      'Don’t have an account? ',
+      name: 'dontHaveAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register`
+  String get register {
+    return Intl.message('Register', name: 'register', desc: '', args: []);
   }
 }
 

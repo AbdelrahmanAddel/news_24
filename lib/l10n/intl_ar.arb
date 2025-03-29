@@ -1,5 +1,4 @@
 {
-
     "@@locale": "ar",
     "news24": "آخبار ٢٤",
     "userName": "اسم المستخدم",
@@ -9,11 +8,13 @@
     "orSignIn": "  أو تسجيل الدخول باستخدام  ",
     "bySigningUp": "من خلال التسجيل في اخبار ٢٤ ، فإنك تقبل \n",
     "termsAndConditions": "الشروط والأحكام",
-    "thePasswordProvide":"  كلمة المرور المقدمة ضعيفة جدًا.",
+    "thePasswordProvide": "  كلمة المرور المقدمة ضعيفة جدًا.",
     "theAccountAlready": "الحساب موجود بالفعل لهذا البريد الإلكتروني.",
-    "signupSuccssful" : "  تم التسجيل بنجاح ، يرجى التحقق من بريدك الإلكتروني للتحقق من حسابك",
-    "unExpectedError" :"حدث خطأ غير متوقع",
-    "pleaseCompleteALl": "يرجى إكمال جميع الحقول"
-
-
+    "signupSuccssful": "  تم التسجيل بنجاح ، يرجى التحقق من بريدك الإلكتروني للتحقق من حسابك",
+    "unExpectedError": "حدث خطأ غير متوقع",
+    "pleaseCompleteALl": "يرجى إكمال جميع الحقول",
+    "signIn": "تسجيل الدخول",
+    "forgetPassword": "نسيت كلمة المرور",
+    "dontHaveAccount": " ليس لديك حساب؟ ",
+    "register": "تسجيل"
 }

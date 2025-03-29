@@ -13,22 +13,22 @@
 import 'package:intl/intl.dart';
 import 'package:intl/message_lookup_by_library.dart';
 
-final messages = MessageLookup();
+final messages = new MessageLookup();
 
 typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 
 class MessageLookup extends MessageLookupByLibrary {
-  @override
   String get localeName => 'ar';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "SignUp": MessageLookupByLibrary.simpleMessage("تسجيل"),
     "bySigningUp": MessageLookupByLibrary.simpleMessage(
       "من خلال التسجيل في اخبار ٢٤ ، فإنك تقبل \n",
     ),
+    "dontHaveAccount": MessageLookupByLibrary.simpleMessage(" ليس لديك حساب؟ "),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+    "forgetPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
     "news24": MessageLookupByLibrary.simpleMessage("آخبار ٢٤"),
     "orSignIn": MessageLookupByLibrary.simpleMessage(
       "  أو تسجيل الدخول باستخدام  ",
@@ -37,6 +37,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "pleaseCompleteALl": MessageLookupByLibrary.simpleMessage(
       "يرجى إكمال جميع الحقول",
     ),
+    "register": MessageLookupByLibrary.simpleMessage("تسجيل"),
+    "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "signupSuccssful": MessageLookupByLibrary.simpleMessage(
       "  تم التسجيل بنجاح ، يرجى التحقق من بريدك الإلكتروني للتحقق من حسابك",
     ),
@@ -53,6 +55,5 @@ class MessageLookup extends MessageLookupByLibrary {
       "حدث خطأ غير متوقع",
     ),
     "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
-    "name": MessageLookupByLibrary.simpleMessage("News 24"),
   };
 }
