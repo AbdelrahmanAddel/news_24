@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news_24/core/constants/assets.dart';
+import 'package:news_24/core/helpers/extension.dart';
+import 'package:news_24/core/routing/routes.dart';
 import 'package:svg_flutter/svg.dart';
 
 import '../../../../core/helpers/spaceing.dart' show horizontalSpace;
@@ -11,10 +13,13 @@ class SocialMediaIcons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.symmetric(horizontal: 46.0.w),
+      padding: EdgeInsets.symmetric(horizontal: 46.0.w),
       child: Row(
         children: [
-          SvgPicture.asset(Assets.assetsImagesSvgMailIcon),
+          GestureDetector(
+            onTap: () => context.pushReplacement(routeName: Routes.signIn),
+            child: SvgPicture.asset(Assets.assetsImagesSvgMailIcon),
+          ),
           horizontalSpace(20),
           SvgPicture.asset(Assets.assetsImagesSvgGmailIcon),
           horizontalSpace(20),
