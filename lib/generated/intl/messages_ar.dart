@@ -32,8 +32,23 @@ class MessageLookup extends MessageLookupByLibrary {
       "  أو تسجيل الدخول باستخدام  ",
     ),
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+    "pleaseCompleteALl": MessageLookupByLibrary.simpleMessage(
+      "يرجى إكمال جميع الحقول",
+    ),
+    "signupSuccssful": MessageLookupByLibrary.simpleMessage(
+      "  تم التسجيل بنجاح ، يرجى التحقق من بريدك الإلكتروني للتحقق من حسابك",
+    ),
     "termsAndConditions": MessageLookupByLibrary.simpleMessage(
       "الشروط والأحكام",
+    ),
+    "theAccountAlready": MessageLookupByLibrary.simpleMessage(
+      "الحساب موجود بالفعل لهذا البريد الإلكتروني.",
+    ),
+    "thePasswordProvide": MessageLookupByLibrary.simpleMessage(
+      "  كلمة المرور المقدمة ضعيفة جدًا.",
+    ),
+    "unExpectedError": MessageLookupByLibrary.simpleMessage(
+      "حدث خطأ غير متوقع",
     ),
     "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
   };

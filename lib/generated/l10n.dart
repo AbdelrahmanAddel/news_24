@@ -109,6 +109,56 @@ class S {
       args: [],
     );
   }
+
+  /// `The password provided is too weak.`
+  String get thePasswordProvide {
+    return Intl.message(
+      'The password provided is too weak.',
+      name: 'thePasswordProvide',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The account already exists for that email.`
+  String get theAccountAlready {
+    return Intl.message(
+      'The account already exists for that email.',
+      name: 'theAccountAlready',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Sign up successful ,Please Check your email to verify your account`
+  String get signupSuccssful {
+    return Intl.message(
+      ' Sign up successful ,Please Check your email to verify your account',
+      name: 'signupSuccssful',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `An unexpected error occurred`
+  String get unExpectedError {
+    return Intl.message(
+      'An unexpected error occurred',
+      name: 'unExpectedError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please complete all fields`
+  String get pleaseCompleteALl {
+    return Intl.message(
+      'Please complete all fields',
+      name: 'pleaseCompleteALl',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -30,8 +30,23 @@ class MessageLookup extends MessageLookupByLibrary {
     "news24": MessageLookupByLibrary.simpleMessage("News 24"),
     "orSignIn": MessageLookupByLibrary.simpleMessage("  or sign in with  "),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "pleaseCompleteALl": MessageLookupByLibrary.simpleMessage(
+      "Please complete all fields",
+    ),
+    "signupSuccssful": MessageLookupByLibrary.simpleMessage(
+      " Sign up successful ,Please Check your email to verify your account",
+    ),
     "termsAndConditions": MessageLookupByLibrary.simpleMessage(
       "Terms & Conditions",
+    ),
+    "theAccountAlready": MessageLookupByLibrary.simpleMessage(
+      "The account already exists for that email.",
+    ),
+    "thePasswordProvide": MessageLookupByLibrary.simpleMessage(
+      "The password provided is too weak.",
+    ),
+    "unExpectedError": MessageLookupByLibrary.simpleMessage(
+      "An unexpected error occurred",
     ),
     "userName": MessageLookupByLibrary.simpleMessage("Username"),
   };

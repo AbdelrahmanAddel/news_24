@@ -7,5 +7,11 @@
     "SignUp": "تسجيل",
     "orSignIn": "  أو تسجيل الدخول باستخدام  ",
     "bySigningUp": "من خلال التسجيل في اخبار ٢٤ ، فإنك تقبل \n",
-    "termsAndConditions": "الشروط والأحكام"
+    "termsAndConditions": "الشروط والأحكام",
+    "thePasswordProvide":"  كلمة المرور المقدمة ضعيفة جدًا.",
+    "theAccountAlready": "الحساب موجود بالفعل لهذا البريد الإلكتروني.",
+    "signupSuccssful" : "  تم التسجيل بنجاح ، يرجى التحقق من بريدك الإلكتروني للتحقق من حسابك",
+    "unExpectedError" :"حدث خطأ غير متوقع",
+    "pleaseCompleteALl": "يرجى إكمال جميع الحقول"
+
 }
