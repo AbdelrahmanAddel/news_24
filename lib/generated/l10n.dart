@@ -60,9 +60,106 @@ class S {
     return Intl.message('News 24', name: 'news24', desc: '', args: []);
   }
 
-  /// `News 24`
-  String get name {
-    return Intl.message('News 24', name: 'name', desc: '', args: []);
+
+  /// `Username`
+  String get userName {
+    return Intl.message('Username', name: 'userName', desc: '', args: []);
+  }
+
+  /// `Password`
+  String get password {
+    return Intl.message('Password', name: 'password', desc: '', args: []);
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message('Email', name: 'email', desc: '', args: []);
+  }
+
+  /// `Sign Up`
+  String get SignUp {
+    return Intl.message('Sign Up', name: 'SignUp', desc: '', args: []);
+  }
+
+  /// `  or sign in with  `
+  String get orSignIn {
+    return Intl.message(
+      '  or sign in with  ',
+      name: 'orSignIn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By signing up to News24 you are accepting our \n`
+  String get bySigningUp {
+    return Intl.message(
+      'By signing up to News24 you are accepting our \n',
+      name: 'bySigningUp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms & Conditions`
+  String get termsAndConditions {
+    return Intl.message(
+      'Terms & Conditions',
+      name: 'termsAndConditions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The password provided is too weak.`
+  String get thePasswordProvide {
+    return Intl.message(
+      'The password provided is too weak.',
+      name: 'thePasswordProvide',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The account already exists for that email.`
+  String get theAccountAlready {
+    return Intl.message(
+      'The account already exists for that email.',
+      name: 'theAccountAlready',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Sign up successful ,Please Check your email to verify your account`
+  String get signupSuccssful {
+    return Intl.message(
+      ' Sign up successful ,Please Check your email to verify your account',
+      name: 'signupSuccssful',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `An unexpected error occurred`
+  String get unExpectedError {
+    return Intl.message(
+      'An unexpected error occurred',
+      name: 'unExpectedError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please complete all fields`
+  String get pleaseCompleteALl {
+    return Intl.message(
+      'Please complete all fields',
+      name: 'pleaseCompleteALl',
+      desc: '',
+      args: [],
+    );
+
   }
 }
 

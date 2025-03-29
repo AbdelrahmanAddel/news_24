@@ -14,6 +14,7 @@ class NewsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(390, 844),
+
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
@@ -28,7 +29,10 @@ class NewsApp extends StatelessWidget {
         darkTheme: AppTheme.darkTheme,
         theme: AppTheme.lightTheme,
         themeMode: ThemeMode.light,
-        initialRoute: Routes.splash,
+
+
+        initialRoute: Routes.signUp,
+
 
         onGenerateRoute: appRouter.onGenerateRoute,
       ),

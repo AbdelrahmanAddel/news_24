@@ -13,16 +13,44 @@
 import 'package:intl/intl.dart';
 import 'package:intl/message_lookup_by_library.dart';
 
-final messages = new MessageLookup();
+final messages = MessageLookup();
 
 typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 
 class MessageLookup extends MessageLookupByLibrary {
+  @override
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
+  
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-    "name": MessageLookupByLibrary.simpleMessage("News 24"),
+    "SignUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
+    "bySigningUp": MessageLookupByLibrary.simpleMessage(
+      "By signing up to News24 you are accepting our \n",
+    ),
+    "email": MessageLookupByLibrary.simpleMessage("Email"),
     "news24": MessageLookupByLibrary.simpleMessage("News 24"),
+    "orSignIn": MessageLookupByLibrary.simpleMessage("  or sign in with  "),
+    "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "pleaseCompleteALl": MessageLookupByLibrary.simpleMessage(
+      "Please complete all fields",
+    ),
+    "signupSuccssful": MessageLookupByLibrary.simpleMessage(
+      "Sign up successful, Please check your email to verify your account",
+    ),
+    "termsAndConditions": MessageLookupByLibrary.simpleMessage(
+      "Terms & Conditions",
+    ),
+    "theAccountAlready": MessageLookupByLibrary.simpleMessage(
+      "The account already exists for that email.",
+    ),
+    "thePasswordProvide": MessageLookupByLibrary.simpleMessage(
+      "The password provided is too weak.",
+    ),
+    "unExpectedError": MessageLookupByLibrary.simpleMessage(
+      "An unexpected error occurred",
+    ),
+    "userName": MessageLookupByLibrary.simpleMessage("Username"),
+    "name": MessageLookupByLibrary.simpleMessage("News 24"),
   };
 }

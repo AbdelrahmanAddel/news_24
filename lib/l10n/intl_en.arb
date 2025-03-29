@@ -1,4 +1,16 @@
 {
+    "@@locale": "en",
     "news24": "News 24",
-    "name": "News 24"
+    "userName": "Username",
+    "password": "Password",
+    "email": "Email",
+    "SignUp": "Sign Up",
+    "orSignIn": "  or sign in with  ",
+    "bySigningUp": "By signing up to News24 you are accepting our \n",
+    "termsAndConditions": "Terms & Conditions",
+    "thePasswordProvide": "The password provided is too weak.",
+    "theAccountAlready": "The account already exists for that email.",
+    "signupSuccssful": " Sign up successful ,Please Check your email to verify your account",
+    "unExpectedError": "An unexpected error occurred",
+    "pleaseCompleteALl": "Please complete all fields"
 }
