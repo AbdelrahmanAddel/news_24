@@ -31,11 +31,18 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "forgetPassword": MessageLookupByLibrary.simpleMessage("Forget Password"),
+    "invalidEmail": MessageLookupByLibrary.simpleMessage("Invalid Email"),
     "news24": MessageLookupByLibrary.simpleMessage("News 24"),
+    "noUserFound": MessageLookupByLibrary.simpleMessage(
+      "No user found for that email.",
+    ),
     "orSignIn": MessageLookupByLibrary.simpleMessage("  or sign in with  "),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
     "pleaseCompleteALl": MessageLookupByLibrary.simpleMessage(
       "Please complete all fields",
+    ),
+    "pleaseVerfiyYourEmail": MessageLookupByLibrary.simpleMessage(
+      "Please verify your email",
     ),
     "register": MessageLookupByLibrary.simpleMessage("Register"),
     "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
@@ -55,5 +62,8 @@ class MessageLookup extends MessageLookupByLibrary {
       "An unexpected error occurred",
     ),
     "userName": MessageLookupByLibrary.simpleMessage("Username"),
+    "wrongPasswordProvided": MessageLookupByLibrary.simpleMessage(
+      "Wrong password provided for that user.",
+    ),
   };
 }

@@ -189,6 +189,46 @@ class S {
   String get register {
     return Intl.message('Register', name: 'register', desc: '', args: []);
   }
+
+  /// `No user found for that email.`
+  String get noUserFound {
+    return Intl.message(
+      'No user found for that email.',
+      name: 'noUserFound',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wrong password provided for that user.`
+  String get wrongPasswordProvided {
+    return Intl.message(
+      'Wrong password provided for that user.',
+      name: 'wrongPasswordProvided',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please verify your email`
+  String get pleaseVerfiyYourEmail {
+    return Intl.message(
+      'Please verify your email',
+      name: 'pleaseVerfiyYourEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid Email`
+  String get invalidEmail {
+    return Intl.message(
+      'Invalid Email',
+      name: 'invalidEmail',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

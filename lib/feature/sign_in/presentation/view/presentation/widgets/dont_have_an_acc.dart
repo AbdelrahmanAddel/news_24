@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_24/core/common/widgets/custom_text_span.dart';
+import 'package:news_24/core/helpers/extension.dart';
+import 'package:news_24/core/routing/routes.dart';
 import 'package:news_24/generated/l10n.dart';
 
 class DontHaveAnAccount extends StatelessWidget {
@@ -10,6 +12,7 @@ class DontHaveAnAccount extends StatelessWidget {
     return CustomTextSpan(
       firstText: S.of(context).dontHaveAccount,
       secondText: S.of(context).register,
+      ontapSecondText: () => context.pushReplacement(routeName: Routes.signUp),
     );
   }
 }

@@ -16,5 +16,9 @@
     "signIn": "Sign In",
     "forgetPassword": "Forget Password",
     "dontHaveAccount": "Don’t have an account? ",
-    "register": "Register"
+    "register": "Register",
+    "noUserFound": "No user found for that email.",
+    "wrongPasswordProvided": "Wrong password provided for that user.",
+    "pleaseVerfiyYourEmail": "Please verify your email",
+    "invalidEmail" :"Invalid Email"
 }

@@ -16,5 +16,9 @@
     "signIn": "تسجيل الدخول",
     "forgetPassword": "نسيت كلمة المرور",
     "dontHaveAccount": " ليس لديك حساب؟ ",
-    "register": "تسجيل"
+    "register": "تسجيل",
+    "noUserFound": "لا يوجد مستخدم لهذا البريد الإلكتروني.",
+    "wrongPasswordProvided": "تم تقديم كلمة مرور خاطئة لهذا المستخدم.",
+    "pleaseVerfiyYourEmail": "يرجى التحقق من بريدك الإلكتروني",
+    "invalidEmail": "البريد الإلكتروني غير صالح"
 }

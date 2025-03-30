@@ -10,7 +10,6 @@ import 'package:news_24/feature/sign_up/presentation/widgets/social_media_icons.
 
 class SignInView extends StatelessWidget {
   const SignInView({super.key});
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

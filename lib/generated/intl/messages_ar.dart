@@ -29,13 +29,22 @@ class MessageLookup extends MessageLookupByLibrary {
     "dontHaveAccount": MessageLookupByLibrary.simpleMessage(" ليس لديك حساب؟ "),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "forgetPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
+    "invalidEmail": MessageLookupByLibrary.simpleMessage(
+      "البريد الإلكتروني غير صالح",
+    ),
     "news24": MessageLookupByLibrary.simpleMessage("آخبار ٢٤"),
+    "noUserFound": MessageLookupByLibrary.simpleMessage(
+      "لا يوجد مستخدم لهذا البريد الإلكتروني.",
+    ),
     "orSignIn": MessageLookupByLibrary.simpleMessage(
       "  أو تسجيل الدخول باستخدام  ",
     ),
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
     "pleaseCompleteALl": MessageLookupByLibrary.simpleMessage(
       "يرجى إكمال جميع الحقول",
+    ),
+    "pleaseVerfiyYourEmail": MessageLookupByLibrary.simpleMessage(
+      "يرجى التحقق من بريدك الإلكتروني",
     ),
     "register": MessageLookupByLibrary.simpleMessage("تسجيل"),
     "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
@@ -55,5 +64,8 @@ class MessageLookup extends MessageLookupByLibrary {
       "حدث خطأ غير متوقع",
     ),
     "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
+    "wrongPasswordProvided": MessageLookupByLibrary.simpleMessage(
+      "تم تقديم كلمة مرور خاطئة لهذا المستخدم.",
+    ),
   };
 }
