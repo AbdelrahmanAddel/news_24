@@ -13,30 +13,41 @@
 import 'package:intl/intl.dart';
 import 'package:intl/message_lookup_by_library.dart';
 
-final messages = MessageLookup();
+final messages = new MessageLookup();
 
 typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 
 class MessageLookup extends MessageLookupByLibrary {
-  @override
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "SignUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
     "bySigningUp": MessageLookupByLibrary.simpleMessage(
       "By signing up to News24 you are accepting our \n",
     ),
+    "dontHaveAccount": MessageLookupByLibrary.simpleMessage(
+      "Don’t have an account? ",
+    ),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "forgetPassword": MessageLookupByLibrary.simpleMessage("Forget Password"),
+    "invalidEmail": MessageLookupByLibrary.simpleMessage("Invalid Email"),
     "news24": MessageLookupByLibrary.simpleMessage("News 24"),
+    "noUserFound": MessageLookupByLibrary.simpleMessage(
+      "No user found for that email.",
+    ),
     "orSignIn": MessageLookupByLibrary.simpleMessage("  or sign in with  "),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
     "pleaseCompleteALl": MessageLookupByLibrary.simpleMessage(
       "Please complete all fields",
     ),
+    "pleaseVerfiyYourEmail": MessageLookupByLibrary.simpleMessage(
+      "Please verify your email",
+    ),
+    "register": MessageLookupByLibrary.simpleMessage("Register"),
+    "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
     "signupSuccssful": MessageLookupByLibrary.simpleMessage(
-      "Sign up successful, Please check your email to verify your account",
+      " Sign up successful ,Please Check your email to verify your account",
     ),
     "termsAndConditions": MessageLookupByLibrary.simpleMessage(
       "Terms & Conditions",
@@ -51,6 +62,8 @@ class MessageLookup extends MessageLookupByLibrary {
       "An unexpected error occurred",
     ),
     "userName": MessageLookupByLibrary.simpleMessage("Username"),
-    "name": MessageLookupByLibrary.simpleMessage("News 24"),
+    "wrongPasswordProvided": MessageLookupByLibrary.simpleMessage(
+      "Wrong password provided for that user.",
+    ),
   };
 }

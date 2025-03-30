@@ -60,7 +60,6 @@ class S {
     return Intl.message('News 24', name: 'news24', desc: '', args: []);
   }
 
-
   /// `Username`
   String get userName {
     return Intl.message('Username', name: 'userName', desc: '', args: []);
@@ -159,7 +158,76 @@ class S {
       desc: '',
       args: [],
     );
+  }
 
+  /// `Sign In`
+  String get signIn {
+    return Intl.message('Sign In', name: 'signIn', desc: '', args: []);
+  }
+
+  /// `Forget Password`
+  String get forgetPassword {
+    return Intl.message(
+      'Forget Password',
+      name: 'forgetPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don’t have an account? `
+  String get dontHaveAccount {
+    return Intl.message(
+      'Don’t have an account? ',
+      name: 'dontHaveAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register`
+  String get register {
+    return Intl.message('Register', name: 'register', desc: '', args: []);
+  }
+
+  /// `No user found for that email.`
+  String get noUserFound {
+    return Intl.message(
+      'No user found for that email.',
+      name: 'noUserFound',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wrong password provided for that user.`
+  String get wrongPasswordProvided {
+    return Intl.message(
+      'Wrong password provided for that user.',
+      name: 'wrongPasswordProvided',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please verify your email`
+  String get pleaseVerfiyYourEmail {
+    return Intl.message(
+      'Please verify your email',
+      name: 'pleaseVerfiyYourEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid Email`
+  String get invalidEmail {
+    return Intl.message(
+      'Invalid Email',
+      name: 'invalidEmail',
+      desc: '',
+      args: [],
+    );
   }
 }
 
