@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news_24/core/common/widgets/custom_text_from_field.dart';
+import 'package:news_24/core/helpers/extension.dart';
 import 'package:news_24/core/helpers/spaceing.dart';
+import 'package:news_24/core/routing/routes.dart';
 import 'package:news_24/core/theme/app_text_style.dart';
 import 'package:news_24/feature/sign_in/presentation/cubit/sign_in_cubit.dart';
 import 'package:news_24/generated/l10n.dart';
@@ -43,9 +45,14 @@ class SignInTextFormFieldsAndForgetPassword extends StatelessWidget {
               verticalSpace(20),
               Align(
                 alignment: Alignment.centerRight,
-                child: Text(
-                  S.of(context).forgetPassword,
-                  style: AppTextStyle.sfproMedS13,
+                child: GestureDetector(
+                  onTap: () {
+                    context.pushNamed(routeName: Routes.resetPassword);
+                  },
+                  child: Text(
+                    S.of(context).forgetPassword,
+                    style: AppTextStyle.sfproMedS13,
+                  ),
                 ),
               ),
             ],

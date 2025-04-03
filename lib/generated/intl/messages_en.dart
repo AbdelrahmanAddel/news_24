@@ -30,6 +30,12 @@ class MessageLookup extends MessageLookupByLibrary {
       "Don’t have an account? ",
     ),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "emailSentPlease": MessageLookupByLibrary.simpleMessage(
+      "Email sent. Please check your email to reset your password",
+    ),
+    "enterYourEmailTo": MessageLookupByLibrary.simpleMessage(
+      "Enter your email to be sent a reset password\n link.",
+    ),
     "forgetPassword": MessageLookupByLibrary.simpleMessage("Forget Password"),
     "invalidEmail": MessageLookupByLibrary.simpleMessage("Invalid Email"),
     "news24": MessageLookupByLibrary.simpleMessage("News 24"),
@@ -45,6 +51,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Please verify your email",
     ),
     "register": MessageLookupByLibrary.simpleMessage("Register"),
+    "reset": MessageLookupByLibrary.simpleMessage("Reset"),
     "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
     "signupSuccssful": MessageLookupByLibrary.simpleMessage(
       " Sign up successful ,Please Check your email to verify your account",

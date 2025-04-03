@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_24/core/routing/routes.dart';
+import 'package:news_24/feature/reset_password/presentation/cubit/reset_password_cubit.dart';
+import 'package:news_24/feature/reset_password/presentation/view/reset_password_view.dart';
 import 'package:news_24/feature/sign_in/presentation/cubit/sign_in_cubit.dart';
 import 'package:news_24/feature/sign_in/presentation/view/presentation/view/sign_in_view.dart';
 import 'package:news_24/feature/sign_up/presentation/cubit/signup_cubit.dart';
@@ -26,6 +28,14 @@ class AppRouter {
               (_) => BlocProvider(
                 create: (context) => SignUpCubit(),
                 child: SignUpView(),
+              ),
+        );
+      case Routes.resetPassword:
+        return MaterialPageRoute(
+          builder:
+              (_) => BlocProvider(
+                create: (context) => ResetPasswordCubit(),
+                child: ResetPasswordView(),
               ),
         );
     }

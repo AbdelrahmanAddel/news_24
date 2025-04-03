@@ -229,6 +229,31 @@ class S {
       args: [],
     );
   }
+
+  /// `Enter your email to be sent a reset password\n link.`
+  String get enterYourEmailTo {
+    return Intl.message(
+      'Enter your email to be sent a reset password\n link.',
+      name: 'enterYourEmailTo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reset`
+  String get reset {
+    return Intl.message('Reset', name: 'reset', desc: '', args: []);
+  }
+
+  /// `Email sent. Please check your email to reset your password`
+  String get emailSentPlease {
+    return Intl.message(
+      'Email sent. Please check your email to reset your password',
+      name: 'emailSentPlease',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
