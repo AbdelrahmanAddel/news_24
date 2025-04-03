@@ -14,7 +14,7 @@ class SignUpCubit extends Cubit<SignUpState> {
 
   bool isObsecure = true;
   void signup() async {
-    emit(LoadingToSignUp());
+    emit(SignUpLoading());
     final responce = await getIt<SignupUseCase>().signUpUseCase(
       emailAddress: emailAddressController.text,
       password: passwordController.text,

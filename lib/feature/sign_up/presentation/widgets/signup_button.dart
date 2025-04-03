@@ -28,7 +28,7 @@ class SignUpButton extends StatelessWidget {
                   : signUpCubitController.signup();
             },
             child:
-                state is LoadingToSignUp
+                state is SignUpLoading
                     ? CustomCircleProgressInicator()
                     : Text(
                       S.of(context).SignUp,

@@ -11,7 +11,7 @@ final class NotEmptyState extends SignUpState {}
 
 final class IsEmptyState extends SignUpState {}
 
-final class LoadingToSignUp extends SignUpState {}
+final class SignUpLoading extends SignUpState {}
 
 final class SignUpSuccessful extends SignUpState {
   final String successMessage;

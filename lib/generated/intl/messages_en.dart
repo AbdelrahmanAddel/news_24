@@ -13,16 +13,14 @@
 import 'package:intl/intl.dart';
 import 'package:intl/message_lookup_by_library.dart';
 
-final messages = MessageLookup();
+final messages = new MessageLookup();
 
 typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 
 class MessageLookup extends MessageLookupByLibrary {
-  @override
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "SignUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
     "bySigningUp": MessageLookupByLibrary.simpleMessage(
@@ -36,7 +34,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Please complete all fields",
     ),
     "signupSuccssful": MessageLookupByLibrary.simpleMessage(
-      "Sign up successful, Please check your email to verify your account",
+      " Sign up successful ,Please Check your email to verify your account",
     ),
     "termsAndConditions": MessageLookupByLibrary.simpleMessage(
       "Terms & Conditions",
@@ -51,6 +49,5 @@ class MessageLookup extends MessageLookupByLibrary {
       "An unexpected error occurred",
     ),
     "userName": MessageLookupByLibrary.simpleMessage("Username"),
-    "name": MessageLookupByLibrary.simpleMessage("News 24"),
   };
 }
