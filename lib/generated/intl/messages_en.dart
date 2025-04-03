@@ -21,5 +21,57 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "SignUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
+    "bySigningUp": MessageLookupByLibrary.simpleMessage(
+      "By signing up to News24 you are accepting our \n",
+    ),
+    "dontHaveAccount": MessageLookupByLibrary.simpleMessage(
+      "Don’t have an account? ",
+    ),
+    "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "emailSentPlease": MessageLookupByLibrary.simpleMessage(
+      "Email sent. Please check your email to reset your password",
+    ),
+    "enterYourEmailTo": MessageLookupByLibrary.simpleMessage(
+      "Enter your email to be sent a reset password\n link.",
+    ),
+    "forgetPassword": MessageLookupByLibrary.simpleMessage("Forget Password"),
+    "invalidEmail": MessageLookupByLibrary.simpleMessage("Invalid Email"),
+    "news24": MessageLookupByLibrary.simpleMessage("News 24"),
+    "noUserFound": MessageLookupByLibrary.simpleMessage(
+      "No user found for that email.",
+    ),
+    "orSignIn": MessageLookupByLibrary.simpleMessage("  or sign in with  "),
+    "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "pleaseCompleteALl": MessageLookupByLibrary.simpleMessage(
+      "Please complete all fields",
+    ),
+    "pleaseVerfiyYourEmail": MessageLookupByLibrary.simpleMessage(
+      "Please verify your email",
+    ),
+    "register": MessageLookupByLibrary.simpleMessage("Register"),
+    "reset": MessageLookupByLibrary.simpleMessage("Reset"),
+    "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
+    "signupSuccssful": MessageLookupByLibrary.simpleMessage(
+      " Sign up successful ,Please Check your email to verify your account",
+    ),
+    "termsAndConditions": MessageLookupByLibrary.simpleMessage(
+      "Terms & Conditions",
+    ),
+    "theAccountAlready": MessageLookupByLibrary.simpleMessage(
+      "The account already exists for that email.",
+    ),
+    "thePasswordProvide": MessageLookupByLibrary.simpleMessage(
+      "The password provided is too weak.",
+    ),
+    "unExpectedError": MessageLookupByLibrary.simpleMessage(
+      "An unexpected error occurred",
+    ),
+    "userName": MessageLookupByLibrary.simpleMessage("Username"),
+    
+    "wrongPasswordProvided": MessageLookupByLibrary.simpleMessage(
+      "Wrong password provided for that user.",
+    ),
+  };
 }
