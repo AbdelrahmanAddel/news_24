@@ -69,6 +69,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "An unexpected error occurred",
     ),
     "userName": MessageLookupByLibrary.simpleMessage("Username"),
+    
     "wrongPasswordProvided": MessageLookupByLibrary.simpleMessage(
       "Wrong password provided for that user.",
     ),

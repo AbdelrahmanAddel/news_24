@@ -158,6 +158,7 @@ class S {
       desc: '',
       args: [],
     );
+
   }
 
   /// `Sign In`
@@ -253,6 +254,7 @@ class S {
       desc: '',
       args: [],
     );
+
   }
 }
 

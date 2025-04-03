@@ -14,17 +14,17 @@ class SignUpCubit extends Cubit<SignUpState> {
 
   bool isObsecure = true;
   void signup() async {
-    emit(LoadingToSignUp());
+    emit(SignUpLoadingState());
     final responce = await getIt<SignupUseCase>().signUpUseCase(
       emailAddress: emailAddressController.text,
       password: passwordController.text,
     );
-    responce.fold((failer) => emit(SignUpFailer(errorMessage: failer)), (
+    responce.fold((failer) => emit(SignUpFailerState(errorMessage: failer)), (
       success,
     ) {
       _saveUserData();
       _sendEmailVerfication();
-      emit(SignUpSuccessful(successMessage: success));
+      emit(SignUpSuccessfulState(successMessage: success));
     });
   }
 

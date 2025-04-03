@@ -71,6 +71,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "حدث خطأ غير متوقع",
     ),
     "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
+
     "wrongPasswordProvided": MessageLookupByLibrary.simpleMessage(
       "تم تقديم كلمة مرور خاطئة لهذا المستخدم.",
     ),
