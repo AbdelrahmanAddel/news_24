@@ -18,7 +18,7 @@ class SignInButton extends StatelessWidget {
 
         return CustomMatrialButton(
           child:
-              state is LoadingToSignInState
+              state is SignInLoadingState
                   ? CustomCircleProgressInicator()
                   : Text(
                     S.of(context).signIn,
@@ -32,7 +32,7 @@ class SignInButton extends StatelessWidget {
         );
       },
       listener: (BuildContext context, SignInState state) {
-        if (state is FailureToSignInState) {
+        if (state is SignInFailureState) {
           customFlutterToast(message: state.errorMessage);
         }
       },

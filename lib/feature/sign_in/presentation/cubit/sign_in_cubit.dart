@@ -14,13 +14,13 @@ class SignInCubit extends Cubit<SignInState> {
   bool isObsecure = true;
 
   signIn() async {
-    emit(LoadingToSignInState());
+    emit(SignInLoadingState());
     final responce = await getIt<SignInUsecase>().signInWithEmailAndPassword(
       emailAddress: emailController.text,
       password: passwordController.text,
     );
     responce.fold(
-      (failure) => emit(FailureToSignInState(errorMessage: failure)),
+      (failure) => emit(SignInFailureState(errorMessage: failure)),
       (success) async {
         _isEmailVerfication();
       },
@@ -37,7 +37,7 @@ class SignInCubit extends Cubit<SignInState> {
       debugPrint("Success");
     } else {
       emit(
-        FailureToSignInState(errorMessage: localiztion.pleaseVerfiyYourEmail),
+        SignInFailureState(errorMessage: localiztion.pleaseVerfiyYourEmail),
       );
       debugPrint("Failure");
     }
