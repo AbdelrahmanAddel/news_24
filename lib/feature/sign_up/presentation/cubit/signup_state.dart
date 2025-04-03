@@ -11,15 +11,15 @@ final class NotEmptyState extends SignUpState {}
 
 final class IsEmptyState extends SignUpState {}
 
-final class SignUpLoading extends SignUpState {}
+final class SignUpLoadingState extends SignUpState {}
 
-final class SignUpSuccessful extends SignUpState {
+final class SignUpSuccessfulState extends SignUpState {
   final String successMessage;
-  SignUpSuccessful({required this.successMessage});
+  SignUpSuccessfulState({required this.successMessage});
 }
 
-final class SignUpFailer extends SignUpState {
+final class SignUpFailerState extends SignUpState {
   final String errorMessage;
 
-  SignUpFailer({required this.errorMessage});
+  SignUpFailerState({required this.errorMessage});
 }

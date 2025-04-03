@@ -28,7 +28,7 @@ class SignUpButton extends StatelessWidget {
                   : signUpCubitController.signup();
             },
             child:
-                state is SignUpLoading
+                state is SignUpLoadingState
                     ? CustomCircleProgressInicator()
                     : Text(
                       S.of(context).SignUp,
@@ -39,9 +39,9 @@ class SignUpButton extends StatelessWidget {
           );
         },
         listener: (BuildContext context, SignUpState state) {
-          if (state is SignUpSuccessful) {
+          if (state is SignUpSuccessfulState) {
             customFlutterToast(message: state.successMessage);
-          } else if (state is SignUpFailer) {
+          } else if (state is SignUpFailerState) {
             customFlutterToast(message: state.errorMessage);
           }
         },
