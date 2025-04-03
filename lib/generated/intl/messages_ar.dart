@@ -26,8 +26,22 @@ class MessageLookup extends MessageLookupByLibrary {
     "bySigningUp": MessageLookupByLibrary.simpleMessage(
       "من خلال التسجيل في اخبار ٢٤ ، فإنك تقبل \n",
     ),
+    "dontHaveAccount": MessageLookupByLibrary.simpleMessage(" ليس لديك حساب؟ "),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+    "emailSentPlease": MessageLookupByLibrary.simpleMessage(
+      "تم إرسال البريد الإلكتروني. يرجى التحقق من بريدك الإلكتروني لإعادة تعيين كلمة المرور",
+    ),
+    "enterYourEmailTo": MessageLookupByLibrary.simpleMessage(
+      "أدخل بريدك الإلكتروني لإرسال رابط إعادة تعيين\n كلمة المرور.",
+    ),
+    "forgetPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
+    "invalidEmail": MessageLookupByLibrary.simpleMessage(
+      "البريد الإلكتروني غير صالح",
+    ),
     "news24": MessageLookupByLibrary.simpleMessage("آخبار ٢٤"),
+    "noUserFound": MessageLookupByLibrary.simpleMessage(
+      "لا يوجد مستخدم لهذا البريد الإلكتروني.",
+    ),
     "orSignIn": MessageLookupByLibrary.simpleMessage(
       "  أو تسجيل الدخول باستخدام  ",
     ),
@@ -35,6 +49,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "pleaseCompleteALl": MessageLookupByLibrary.simpleMessage(
       "يرجى إكمال جميع الحقول",
     ),
+    "pleaseVerfiyYourEmail": MessageLookupByLibrary.simpleMessage(
+      "يرجى التحقق من بريدك الإلكتروني",
+    ),
+    "register": MessageLookupByLibrary.simpleMessage("تسجيل"),
+    "reset": MessageLookupByLibrary.simpleMessage("إعادة تعيين"),
+    "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "signupSuccssful": MessageLookupByLibrary.simpleMessage(
       "  تم التسجيل بنجاح ، يرجى التحقق من بريدك الإلكتروني للتحقق من حسابك",
     ),
@@ -51,5 +71,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "حدث خطأ غير متوقع",
     ),
     "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
+
+    "wrongPasswordProvided": MessageLookupByLibrary.simpleMessage(
+      "تم تقديم كلمة مرور خاطئة لهذا المستخدم.",
+    ),
   };
 }

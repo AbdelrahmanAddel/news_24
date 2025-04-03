@@ -14,6 +14,10 @@ class Assets {
   /// assets/images/svg/appleIcon.svg
   static const String assetsImagesSvgAppleIcon = "assets/images/svg/appleIcon.svg";
 
+  /// Assets for assetsImagesSvgBackIcon
+  /// assets/images/svg/backIcon.svg
+  static const String assetsImagesSvgBackIcon = "assets/images/svg/backIcon.svg";
+
   /// Assets for assetsImagesSvgFacebookIcon
   /// assets/images/svg/facebookIcon.svg
   static const String assetsImagesSvgFacebookIcon = "assets/images/svg/facebookIcon.svg";
