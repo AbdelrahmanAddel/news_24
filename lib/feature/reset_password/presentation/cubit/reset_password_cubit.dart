@@ -11,13 +11,13 @@ class ResetPasswordCubit extends Cubit<ResetPasswordState> {
   TextEditingController emailAddressController = TextEditingController();
 
   Future<void> resetPassword() async {
-    emit(ResetPasswordLoading());
+    emit(ResetPasswordLoadingState());
     final responce = await getIt<ResetPasswordUseCase>().call(
       emailAddress: emailAddressController.text,
     );
     responce.fold(
-      (failur) => emit(FailureToResetPassword(failureMessage: failur)),
-      (success) => emit(ResetPasswordSuccess(successMessage: success)),
+      (failur) => emit(FailureToResetPasswordState(failureMessage: failur)),
+      (success) => emit(ResetPasswordSuccessState(successMessage: success)),
     );
   }
 
