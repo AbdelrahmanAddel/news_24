@@ -16,9 +16,12 @@ final class ResetPasswordSuccessState extends ResetPasswordState {
 
   ResetPasswordSuccessState({required this.successMessage});
 }
-
 final class FailureToResetPasswordState extends ResetPasswordState {
   final String failureMessage;
 
   FailureToResetPasswordState({required this.failureMessage});
+
+
+  
 }
+
