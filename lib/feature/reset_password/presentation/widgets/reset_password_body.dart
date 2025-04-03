@@ -35,7 +35,7 @@ class ResetPasswordBody extends StatelessWidget {
                       : AppColors.darkModeColor,
 
               child:
-                  state is ResetPasswordLoading
+                  state is ResetPasswordLoadingState
                       ? CustomCircleProgressInicator()
                       : Text(
                         S.of(context).reset,
@@ -55,9 +55,9 @@ class ResetPasswordBody extends StatelessWidget {
         );
       },
       listener: (BuildContext context, ResetPasswordState state) {
-        if (state is ResetPasswordSuccess) {
+        if (state is ResetPasswordSuccessState) {
           customFlutterToast(message: state.successMessage);
-        } else if (state is FailureToResetPassword) {
+        } else if (state is FailureToResetPasswordState) {
           customFlutterToast(message: state.failureMessage);
         }
       },

@@ -9,16 +9,19 @@ final class IsEmptyState extends ResetPasswordState {}
 
 final class NotEmptyState extends ResetPasswordState {}
 
-final class ResetPasswordLoading extends ResetPasswordState {}
+final class ResetPasswordLoadingState extends ResetPasswordState {}
 
-final class ResetPasswordSuccess extends ResetPasswordState {
+final class ResetPasswordSuccessState extends ResetPasswordState {
   final String successMessage;
 
-  ResetPasswordSuccess({required this.successMessage});
+  ResetPasswordSuccessState({required this.successMessage});
 }
-
-final class FailureToResetPassword extends ResetPasswordState {
+final class FailureToResetPasswordState extends ResetPasswordState {
   final String failureMessage;
 
-  FailureToResetPassword({required this.failureMessage});
+  FailureToResetPasswordState({required this.failureMessage});
+
+
+  
 }
+
