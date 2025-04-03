@@ -20,5 +20,9 @@
     "noUserFound": "No user found for that email.",
     "wrongPasswordProvided": "Wrong password provided for that user.",
     "pleaseVerfiyYourEmail": "Please verify your email",
-    "invalidEmail" :"Invalid Email"
+    "invalidEmail" :"Invalid Email",
+    "enterYourEmailTo":"Enter your email to be sent a reset password\n link.",
+    "reset": "Reset",
+    "emailSentPlease":"Email sent. Please check your email to reset your password"
+    
 }
